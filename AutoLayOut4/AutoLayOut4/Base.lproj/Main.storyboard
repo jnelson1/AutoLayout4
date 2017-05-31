@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayOut4" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xb-m7-wIF">
+                                <rect key="frame" x="16" y="167" width="343" height="135"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GAF-ym-5tu">
+                                        <rect key="frame" x="0.0" y="50" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6x5-My-l2V">
+                                        <rect key="frame" x="0.0" y="90" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQk-bV-uA7">
+                                        <rect key="frame" x="137" y="10" width="68.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8xb-m7-wIF" secondAttribute="height" multiplier="343:135" id="5Gt-cx-b69"/>
+                                    <constraint firstItem="GAF-ym-5tu" firstAttribute="leading" secondItem="8xb-m7-wIF" secondAttribute="leading" id="9TS-J1-QnM"/>
+                                    <constraint firstItem="GAF-ym-5tu" firstAttribute="top" secondItem="8xb-m7-wIF" secondAttribute="top" constant="50" id="DBS-i2-sku"/>
+                                    <constraint firstAttribute="trailing" secondItem="6x5-My-l2V" secondAttribute="trailing" id="Dn6-RQ-UHs"/>
+                                    <constraint firstItem="bQk-bV-uA7" firstAttribute="top" secondItem="8xb-m7-wIF" secondAttribute="top" constant="10" id="O4n-8Y-SHD"/>
+                                    <constraint firstItem="6x5-My-l2V" firstAttribute="leading" secondItem="8xb-m7-wIF" secondAttribute="leading" id="X8T-eP-ISG"/>
+                                    <constraint firstAttribute="width" constant="343" id="f4W-xQ-kjh"/>
+                                    <constraint firstItem="6x5-My-l2V" firstAttribute="top" secondItem="8xb-m7-wIF" secondAttribute="top" constant="90" id="joJ-lZ-iDX"/>
+                                    <constraint firstAttribute="trailing" secondItem="GAF-ym-5tu" secondAttribute="trailing" id="lMB-GM-hrQ"/>
+                                    <constraint firstItem="bQk-bV-uA7" firstAttribute="centerX" secondItem="8xb-m7-wIF" secondAttribute="centerX" id="ygS-tE-m5K"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="8xb-m7-wIF" secondAttribute="trailing" id="Eaa-Iq-mfI"/>
+                            <constraint firstItem="6x5-My-l2V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LbM-0f-QVz"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="8xb-m7-wIF" secondAttribute="leading" id="OIj-9t-dtK"/>
+                            <constraint firstItem="8xb-m7-wIF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="centerYWithinMargins" multiplier="0.5" id="pwm-e0-wrh"/>
+                            <constraint firstItem="GAF-ym-5tu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uzf-k6-kaC"/>
+                            <constraint firstItem="8xb-m7-wIF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wE1-xr-CLO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
